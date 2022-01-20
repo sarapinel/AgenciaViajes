@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    
+    <meta charset="utf-8">
+    
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href= "css/bootstrap.min.css" media="screen">
+<style type="text/css">
+  /*parrafo de el tipo de fuente que vamos 
+  a utilizar todo el rato */
+  *{
+  font-family: 'Dosis';
+}
+
+
+
+
+/*imagen de fondo movil*/
+@media (min-width: 420px) {
+#imagen{  
+ background-image: url("iconoseimagenes/imagenfondoAgencia.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+height: 600px;
+position:relative;
+text-align: center;
+}
+.enlaces,.vuelos,.hoteles,.vueloyhotel,.paquetes{
+ 
+  display: inline-block;
+  margin:20px 10px; 
+  color: white;
+  font-weight: bold;
+}
+  /*es el header donde esta el correo ,telefono
+ etc*/
+.divmenu{
+position: absolute; 
+background-color: #94C8ED;
+width: 100%;
+height: 25px;
+}
+
+
+}
+/*imagen de fondo ordenador*/
+@media (max-width: 419px) {
+  #imagen{  
+ background-image: url("iconoseimagenes/imagenfondoAgencia.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+height: 400px;
+position:relative;
+text-align: center;
+}
+/*barra de navegacion ,enlaces*/
+.enlaces,.vuelos,.hoteles,.vueloyhotel,.paquetes{
+ 
+  display: inline-block;
+  margin:20px 10px; 
+  color: white;
+  font-weight: bold;
+  
+
+
+}
+/*es el header donde esta el correo ,telefono
+ etc*/
+.divmenu{
+position: absolute; 
+background-color: #94C8ED;
+width: 100%;
+height: 25px;
+}
+
+  }
+ 
+
+
+
+
+/*parrafo de 
+busca.reserva.viaja*/
+.busca{
+  position: absolute;
+  padding:75px 30px 40px 20px ;
+  font-size: 20px;
+  color:white;
+  font-weight: bold;
+  text-align: left;
+  
+}
+/* el div botones  de le buscador de
+ vuelos,vuelo+hotel,hoteles,
+ paquetes*/
+ #botonescambiantes{
+ padding: 9px;
+  font-size: 20px;
+  display: inline-block;
+  
+  
+  
+}
+
+/*button botones  de el buscador de
+ vuelos,vuelo+hotel,hoteles,
+ paquetes*/
+
+#botonesimagen{
+  background-color: rgba(141, 139, 138,0.9);
+  font-weight: bold;
+   width:120px;
+   height: 50px;
+}
+
+.botonesradio{
+  width: 40px;
+  height: 20px;
+
+}
+/*boton de ida y vuelta*/
+.idayvuelta{
+  font-family:'dosis' ;
+  display: inline-block;
+  font-size: 15px;
+  color: black;
+}
+/*select de el tipo de clase volar*/
+#clasevuelo{
+  padding: 5px 30px;
+  display: inline-block;
+
+}
+.tipoletra{
+
+}
+/*fondo de el buscador de fecha,viajeros
+ etc
+*/
+
+.fondobuscador{
+background-color: rgba(141,139,138,0.9) ;
+border-radius: 10px;
+
+
+
+}
+p{
+  color: black;
+  font-size: 12px;
+  text-align: left;
+  
+  margin-left: 20px;
+}
+.botonestext{
+
+}
+/*parrafo del home de 
+lugares recomendados*/
+.parrafolugares{
+  font-family: 'dosis';
+  color: black;
+  font-weight: bold;
+}
+#cuadrado{
+  background-color: #8D8B8A;
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  border-color: black;
+}
+
+
+</style>
+    
+  </head>
+  <body>
+    
+    <div id="imagen">
+        
+<div class="divmenu"></div>
+
+
+      
+  <div class="enlaces"><a href="#"></a>Quienes Somos</div>
+  <div class="vuelos"><a href="#"></a>Vuelos</div>
+  <div class="hoteles"><a href="#"></a>Hoteles</div>
+  <div class="paquetes"><a href="#"></a>Paquetes</div>
+  <div class="vueloyhotel"><a href="#"></a>Vuelo+Hotel</div>
+
+  <div class="busca">BUSCA.RESERVA.VIAJA<br>
+    <div  id="botonescambiantes"><button id="botonesimagen" type="button">Vuelos</button></div>
+  <div  id="botonescambiantes"><button id="botonesimagen" type="button">Hoteles</button></div>
+  <div  id="botonescambiantes"><button id="botonesimagen" type="button">Vuelo+Hotel</button></div>
+  <div  id="botonescambiantes"><button id="botonesimagen" type="button">Paquetes</button></div>
+  <div><form class="fondobuscador" id="mibuscador" name="mibuscador">
+     <input class="botonesradio" type="radio" name="direccion" id="direccion" ><div class="idayvuelta">Ida y Vuelta</div>
+      <input class="botonesradio" type="radio" name="direccion" id="direccion" ><div class="idayvuelta">Solo ida</div>
+      <div id="clasevuelo"><select id="selectclase" name="clasevuelo">
+  <option  class="tipoletra" value="turista">Turista</option>
+  <option value="turista superior">Turista superior</option>
+  <option value="bussiness">Business</option>
+  <option value="primera clase">Primera Clase</option>
+</select>
+</div>
+<p>Origen</p>
+ <div class=""><input  placeholder="ciudad o aeropuerto" size="12" class="botonestext" type="text" name="origen" id="origen" ></div>
+
+  
+
+    </form>
+  </div>
+
+
+ 
+  
+
+    
+    <script src="http//code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+  </body>
+</html>

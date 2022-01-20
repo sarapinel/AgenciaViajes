@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+*{
+	font-family: 'Dosis';
+}
+
+#imagen{
+	width: 100%;
+	text-align: center;
+}
+	@media (min-width: 760px){
+  
+.divmenu{
+position: absolute;	
+background-color: #94C8ED;
+width: 100%;
+height: 25px;
+}
+#menu1{
+list-style-type:none;
+text-align: left;
+background-color:#94C8ED ;
+}
+.contacta, .telefono,.correo,.busqueda{
+  padding: 10px 15px;
+display: inline-block;
+position: relative;
+font-size:60%;
+font-weight: bold;
+}
+.iconotelf,.correo,.iconlupa{
+	position: relative;
+height: 35px;
+	width: 20px;
+}
+
+a{
+text-decoration: none;
+color:white;
+font-weight: 700;
+font-size: 20px;
+}
+.enlaces,.vuelos,.hoteles,.vueloyhotel,.paquetes{
+	display: inline-block;
+	margin: 34px;
+	color: white;
+	font-weight: bold;
+	
+
+}
+p{
+	padding:40px 31px 50px 40px;
+	font-size: 35px;
+	color:white;
+	font-weight: bold;
+	text-align: left;
+	
+}
+#imagen{	
+background-image: url("iconoseimagenes/imagenfondoAgencia.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+height: 600px;
+position:relative;
+
+}
+
+}
+
+
+
+  </style>
+</head>
+<body>
+<div id="divpadre">
+<nav id="imagen">
+<div class="divmenu"></div>
+
+<div id="menu1">
+	<div class="contacta"> Contacta con Nosotros!</div>
+	<div class="telefono"><img class="iconotelf"src="iconoseimagenes/iconotelf.png">918735258</div>
+	<div class="correo"><img  class="iconcorreo"src="iconoseimagenes/iconocorreo.png">agenciaviajes@gmail.com</div>
+    <div class="busqueda"><img  class="iconlupa"src="iconoseimagenes/lupa.png"></div>
+
+</div>
+	
+
+
+<div class="enlaces"><a href="#"></a>Quienes Somos</div>
+<div class="vuelos"><a href="#"></a>Vuelos</div>
+<div class="hoteles"><a href="#"></a>hoteles</div>
+<div class="paquetes"><a href="#"></a>Paquetes</div>
+<div class="vueloyhotel"><a href="#"></a>Vuelo+Hotel</div>
+<p>Busca.Reserva.Viaja</p>
+<br>
+<br>
+<br>
+<div  id="buscador"><form class="fondo" id="mibuscador" name="mibuscador">
+    <input class="botonesradio" type="radio" name="direccion" id="direccion" ><div class="idayvuelta">Ida y Vuelta</div>
+    <input class="botonesradio" type="radio" name="direccion" id="direccion" ><div class="idayvuelta">Solo ida</div>
+    <div id="clasevuelo"><select id="selectclase" name="clasevuelo">
+  <option  value="turista">Turista</option>
+  <option value="turista superior">Turista superior</option>
+  <option value="bussiness">Business</option>
+  <option value="primera clase">Primera Clase</option>
+</select>
+</div>
+
+
+
+
+
+
+    
+  </form></div>
+
+</div> 
+
+
+    
+
+
+
+
+
+<div class="origendestinofechas">Origen</div>
+<input placeholder="ciudad o aeropuerto"class="botonesbuscar" size="10"type="text" id="origen" name="Origen">
+<div class="origendestinofechas">Destino</div>
+<input placeholder="ciudad o aeropuerto"class="botonesbuscar" size="10"type="text" id="Destino" name="Destino">
+<div class="origendestinofechas">Fecha de ida</div>
+<input class="botonesbuscar" size="10"type="date" id="fechaida" name="fechaida">
+<div ><select name="numviajeros" name="numviajeros">
+  <option  value="adultos">Adultos(>12)</option>
+  <option value="niños">Niños(2-11)</option>
+  <option value="niños1">Niños(<2)</option>
+
+
+ <div  id="botonescambiantes"><button id="botonesimagen" type="button">Vuelos</button></div>
+  <div  id="botonescambiantes"><button id="botonesimagen" type="button">Hoteles</button></div>
+  <div  id="botonescambiantes"><button id="botonesimagen" type="button">Vuelo+Hotel</button></div>
+  <div  id="botonescambiantes"><button id="botonesimagen" type="button">Paquetes</button></div>
+  <div><form class="fondobuscador" id="mibuscador" name="mibuscador">
+     <input class="botonesradio" type="radio" name="direccion" id="direccion" ><div class="idayvuelta">Ida y Vuelta</div>
+
+  
+
+    </form>
+  </div>
+
+
+
+
+  
+  
+</select>
+#botonescambiantes{
+ padding: 9px;
+  font-size: 20px;
+  display: inline-block;
+  
+  
+  
+}
+
+
+
+.busca{
+  padding: 70px 30px;
+  font-size: 35px;
+  color:white;
+  font-weight: bold;
+  text-align: left;
+  
+}
+#botonesbuscador{
+  padding:9px;
+  font-size: 20px;
+  display: inline-block;
+  
+  
+}
+#botonesimagen{
+ background-color: #8D8B8A;
+  font-weight: bold;
+   width:120px;
+   height: 50px;
+  
+  
+
+}
+.fondo{
+  background-color: #8D8B8A;
+}
+.botonesradio{
+  width: 60px;
+  height: 30px;
+
+}
+
+
+.btn-primary{
+  background-color: #8D8B8A;
+  font-weight: bold;
+
+
+}
+
+.idayvuelta{
+
+  display: inline-block;
+  font-size: 18px;
+  color: black;
+}
+#clasevuelo{
+  padding: 5px 30px;
+  display: inline-block;
+
+}
+#selectclase{
+  width: 120px;
+  height: 40px;
+  }
+  .origendestinofechas{
+    padding-bottom: 20px;
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+  }
+  .botonesbucar{
+  font-size: 10px;
+  border-radius: 3px 5px 5px 5px;
+  border-color: #8D8B8A;
+  box-shadow: 12px;
+  }
+  input::placeholder {
+  color: black;
+  font-size: 20px;
+  font-style: italic;
+  
+}
+
+
+</nav>
+</div>
+</body>
+</html>
